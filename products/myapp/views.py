@@ -38,7 +38,7 @@ def cust_form(request):
         form = CustForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('сustomers')
+            return redirect('customers')
         else:
             error = 'Форма была неверной'
 
