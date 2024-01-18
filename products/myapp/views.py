@@ -42,7 +42,7 @@ def cust_form(request):
         else:
             error = 'Форма была неверной'
 
-    form = OrderForm()
+    form = CustForm()
     context = {'form': form, 'error': error}
     return render(request, 'myapp/cust_form.html', context)
 
@@ -57,6 +57,6 @@ def prod_form(request):
         else:
             error = 'Форма была неверной'
 
-    form = OrderForm()
+    form = ProdForm()
     context = {'form': form, 'error': error}
     return render(request, 'myapp/prod_form.html', context)
